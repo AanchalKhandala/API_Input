@@ -10,7 +10,7 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const parsedInput = JSON.parse(jsonInput);
-      const response = await axios.post("bajajbackend-qgdzu2nm1-aanchalkhandalas-projects.vercel.app/bfhl", parsedInput);
+      const response = await axios.post("https://bajaj-backend-7dnc.onrender.com/bfhl", parsedInput);
       setResponseData(response.data);
     } catch (err) {
       console.error("Error in API call:", err);
