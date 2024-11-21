@@ -18,7 +18,7 @@ function isPrime(num) {
   return true;
 }
 
-app.post("/", (req, res) => {
+app.post("/bfhl", (req, res) => {
   const { data, file_b64 } = req.body;
 
   if (!data || !Array.isArray(data)) {
@@ -66,7 +66,7 @@ app.post("/", (req, res) => {
   res.json(response);
 });
 
-app.get("/", (req, res) => {
+app.get("/bfhl", (req, res) => {
   res.json({ operation_code: 1 });
 });
 
